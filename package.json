@@ -8,7 +8,7 @@
     "start": "node server.js",
     "server": "nodemon serevr.js",
     "client": "npm start --prefix ./client ",
-    "dev": "concurrently \"npm start\""
+    "dev": "\"npm start\""
   },
   "author": "Abdus Sabur",
   "license": "ISC",
