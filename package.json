@@ -8,7 +8,7 @@
     "start": "node server.js",
     "server": "nodemon serevr.js",
     "client": "npm start --prefix ./client ",
-    "dev": "\"npm start\""
+    "dev": "concurrently \"npm start\""
   },
   "author": "Abdus Sabur",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "cloudinary": "^1.40.0",
+    "concurrently": "^8.2.1",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
