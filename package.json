@@ -4,8 +4,11 @@
   "description": "MERN stack eccomarce project. ",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js \"npm start\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon serevr.js",
+    "client": "npm start --prefix ./client ",
+    "dev": "concurrently \"npm start\""
   },
   "author": "Abdus Sabur",
   "license": "ISC",
