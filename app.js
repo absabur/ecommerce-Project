@@ -26,7 +26,7 @@ app.use("/api/category",categoryRouter)
 app.use(express.static(path.join(__dirname, "./frontend/build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./frontend/build/index.html"));
+  res.sendFile(path.resolve(__dirname, "./frontend/build/static/index.html"));
 });
 
 // route path error handling
