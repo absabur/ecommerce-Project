@@ -23,10 +23,10 @@ app.use("/api/user",userRouter)
 app.use("/api/order",orderRouter)
 app.use("/api/category",categoryRouter)
 
-app.use(express.static(path.join(__dirname, "./clint/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./clint/build/index.html"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 // route path error handling
